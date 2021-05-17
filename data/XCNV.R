@@ -60,7 +60,7 @@ cnv.length=indata$V3-indata$V2+1
 genome.file=paste(data.path,"genome.txt",sep="")
 
 timestamp()
-message("### Computing X-CNV annotations")
+message("### Start to compute X-CNV annotations")
 timestamp()
 source(paste(script.path,"/data/compute.ljb26.R",sep=""))
 message("### Computing ljb26 annotations")
@@ -101,4 +101,4 @@ xcnv.score=predict(xcnv.model,newdata=all.vars.for.prediction)
 all.vars.for.output=cbind(all.vars,MVP_score=xcnv.score)
 colnames(all.vars.for.output)[1:4]=c("Chr","Start","End","Type")
 fwrite(all.vars.for.output,output.file,row.names=F,quote=F)
-
+message("### X-CNV runs successfully!")

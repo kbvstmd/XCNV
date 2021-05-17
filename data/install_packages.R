@@ -1,5 +1,5 @@
 pkgs=installed.packages()
-required.packages=c("funr","xgboost","data.table")
+required.packages=c("xgboost","data.table")
 required.packages=setdiff(required.packages,rownames(pkgs))
 if(length(required.packages)>0)
 {
