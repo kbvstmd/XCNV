@@ -28,7 +28,7 @@ wget http://119.3.41.228:8080/XCNV/data/hg19_ljb26_all_converted_scores.txt -O .
 wget http://119.3.41.228:8080/XCNV/data/hg19_ljb26_all_converted_sites.vcf -O ./data/hg19_ljb26_all_converted_sites.vcf
 wget http://119.3.41.228:8080/XCNV/data/CDTS_percentile.txt -O ./data/CDTS_percentile.txt
 wget http://119.3.41.228:8080/XCNV/data/merged.cnv.sample.info.txt -O ./data/merged.cnv.sample.info.txt
-wget http://119.3.41.228:8080/XCNV/data/merged.cnv.data.output.csv -O ./data/merged.cnv.data.output.csv
+ wget http://119.3.41.228:8080/XCNV/data/merged.cnv.data.output.csv -O ./data/merged.cnv.data.output.csv
 
 rscript=`which Rscript`
 script_path=`pwd`
