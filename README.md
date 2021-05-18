@@ -2,7 +2,7 @@
  X-CNV is a tool to predict CNV pathogenicity using an XGBoost classifier.<br><br>
  X-CNV calculates a meta-voting prediction (MVP) score to quantitatively evaluate disease-causing probability. It consists of the most comprehensive CNV data and annotations by integrating various publicly available genetic variant repositories. The features covering the genomics, genome region, variation types, and population genetics properties are taken into account to boost the prediction power. More importantly, a meta-voting prediction (MVP) score is proposed to measure the CNV pathogenic effect quantitatively, which can be used to determine the CNV pathogenicity. 
 # 2. Requirements
- The local version X-CNV requires two R packages, data.table and xgboost(your may get issues when you install the xgboost packages you can see the https://github.com/kbvstmd/XCNV/issues/1 for help), and Bedtools v2.26.0. If the R packages and bedtools cannot be installed automatically, users can install them manually. The executable file of bedtools should be placed in ./tools/. ## Memory limit >=32G
+ The local version X-CNV requires two R packages, data.table and xgboost(your may get issues when you install the xgboost packages you can see the https://github.com/kbvstmd/XCNV/issues/1 for help), and Bedtools v2.26.0. If the R packages and bedtools cannot be installed automatically, users can install them manually. The executable file of bedtools should be placed in ./tools/. ## Memory limit >=8G
 # 3. Installation
 ```bash
 git clone https://github.com/kbvstmd/XCNV.git
